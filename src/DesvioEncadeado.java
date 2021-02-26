@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class DesvioEncadeado {
 
 	public static void main(String[] args) {
-		/*Uma ONG resolveu prestar um serviço bem diferente: ela oferece vans para buscar pessoas com qualquer tipo de dificuldade de locomoção para poderem votar.
-		 * Para evitar problemas no momento do embarque, porém, você foi convidado a criar um programa que valide a idade dos passageiros: caso tenham 16 anos ou menos, não podem votar (e nem embarcar). Caso tenham entre 16 anos e 18 incompletos, podem optar por votar ou não. Caso tenham mais de 18 anos, devem votar obrigatoriamente.
+		/*Uma ONG resolveu prestar um serviï¿½o bem diferente: ela oferece vans para buscar pessoas com qualquer tipo de dificuldade de locomoï¿½ï¿½o para poderem votar.
+		 * Para evitar problemas no momento do embarque, porï¿½m, vocï¿½ foi convidado a criar um programa que valide a idade dos passageiros: caso tenham 16 anos ou menos, nï¿½o podem votar (e nem embarcar). Caso tenham entre 16 anos e 18 incompletos, podem optar por votar ou nï¿½o. Caso tenham mais de 18 anos, devem votar obrigatoriamente.
 		 * Crie um programa que receba a idade dos passageiros em potencial e indique se podem embarcar e votar.*/
 		
 		Scanner leitor = new Scanner(System.in);
@@ -12,7 +12,27 @@ public class DesvioEncadeado {
 		System.out.println("Por favor, digite a idade do passageiro.");
 		idade = leitor.nextInt();
 	
-		/*Aqui devemos criar uma solução para realizar as verificações.*/
+		/*Aqui devemos criar uma soluï¿½ï¿½o para realizar as verificaï¿½ï¿½es.*/
+		
+		/*if (idade <16) {
+			System.out.println("Essa pessoa nÃ£o pode votar e nÃ£o pode embacar embarcar! ");
+	
+		}else {
+			if (idade <18) {
+				System.out.println("Tanto a votaÃ§Ã£o quanto o embarque sÃ£o opcionais para essa pessoa! ");
+			
+			}else {
+				System.out.println("Essa pessoa Ã© obrigada a votar!");
+			}
+		}*/
+		
+		if (idade <=16) {
+			System.out.println("Essa pessoa nÃ£o pode votar e nÃ£o pode embarcar");
+		}else if (idade < 18) {
+			System.out.println("Tanto a votaÃ§Ã£o quanto o embarque sÃ£o opcionais");
+		}else {
+			System.out.println("Essa pessoa Ã© obrigada a votar!");	
+		}
 		
 		
 	

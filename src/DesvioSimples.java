@@ -16,11 +16,11 @@ public class DesvioSimples {
 		
 		// if significa SE + (condicao) for verdadeira, execute tal coisa, 
 		if (idade>=12) {
-			System.out.println("Voce pode jogar");
+			System.out.println("Você pode jogar");
 		
 		//caso contrario execute outra acao	
 		}else
-			System.out.println("Voce nao esta autorizado");
+			System.out.println("Voce nao está autorizado");
 		
 		leitor.close();
 
